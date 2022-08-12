@@ -21,12 +21,11 @@ const Splash = () => {
         <Button type="secondary" text={'Start'} onClick={() => router.push('/game/Game')} />
         <Button text={!showInfo ? "Show info" : "Hide info"} onClick={() => setShowInfo(!showInfo)} />
       </div>
-      {showInfo && <h4 className={styles.bottom_section}>
-        This is only for testing.{'\n'}
+      {showInfo && <h5 className={styles.bottom_section}>
         The random game function randomly fills the blocks.{'\n'}
         You can use brute force of greedy search to find the solution.{'\n'}
         You can edit the board manually by clicking on the blocks or by importing a text in the format 1,2,3{'\n'}
-      </h4>}
+      </h5>}
 
     </div>
 

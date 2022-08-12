@@ -5,7 +5,8 @@ interface Props {
   text: string
   onClick: () => any
 }
-export default function Button(props: Props) {
+
+const Button = (props: Props) => {
   const getClassName = () => {
     switch (props.type) {
       case "primary": return styles.button
@@ -17,3 +18,5 @@ export default function Button(props: Props) {
     <button className={getClassName()} onClick={props.onClick}>{props.text}</button>
   )
 }
+
+export default Button 
