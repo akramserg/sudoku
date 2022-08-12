@@ -1,0 +1,60 @@
+@import "../../styles/_general_styling.scss";
+
+.sticky_button_wrapper {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sticky_button {
+    border: 1px solid white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondary_color;
+        width: 50px;
+        height: 50px;
+        animation-name: keyframes;
+        animation-duration: 0.5s;
+    }
+
+    &:active {
+        background-color: $accent_4;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.sticky_button_secondary {
+    @extend .sticky_button;
+    background-color: $tertiary_color;
+    border: none;
+
+}
+
+@keyframes keyframes {
+    from {
+        background-color: $tertiary_color;
+        width: 40px;
+        height: 40px;
+    }
+
+    to {
+        background-color: $secondary_color;
+        width: 50px;
+        height: 50px;
+    }
+}

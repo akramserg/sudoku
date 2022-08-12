@@ -1,0 +1,39 @@
+@import '../../styles/_general_styling.scss';
+
+.splash_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.button_section {
+  @extend .button_section
+}
+
+
+.logo {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: float infinite 5s ease-in-out;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

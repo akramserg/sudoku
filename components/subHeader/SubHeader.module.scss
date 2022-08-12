@@ -1,0 +1,19 @@
+@import "../../styles/_general_styling.scss";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.button_section {
+    @extend .button_section
+}
+
+.message {
+    height: 35px;
+    padding: 10px;
+    font-weight: bold;
+}

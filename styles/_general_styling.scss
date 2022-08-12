@@ -1,0 +1,41 @@
+$primary_color: #10D0D6;
+$secondary_color: #960200;
+$tertiary_color: #CE6C47;
+$accent_1: #FFD046;
+$accent_2: #EADAA2;
+$accent_3: #E3E3E3;
+$accent_4: #3E3E3E;
+$accent_5: #1E1E1E;
+
+.bottom_section {
+    position: absolute;
+    bottom: 50px;
+}
+
+
+.button_section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
