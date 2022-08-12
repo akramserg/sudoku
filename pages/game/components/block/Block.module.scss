@@ -2,7 +2,7 @@
 
 .container {
     text-align: center;
-    background-color: $accent_4;
+    background-color: $accent_2;
     width: 35px;
     height: 35px;
     margin: 1px;
@@ -20,7 +20,7 @@
     }
 
     .block {
-        color: $accent_3;
+        color: $accent_4;
         font-size: 1.3rem;
     }
 }
@@ -28,6 +28,6 @@
 
 .empty_block {
     @extend .container;
-    background-color: $accent_2;
+    background-color: $accent_4;
 
 }
