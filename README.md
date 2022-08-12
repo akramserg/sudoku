@@ -1,7 +1,8 @@
 # Sudoku Solver
 
 A small web app for solving sudoku puzzles.
-
+You can try it on vercel on
+https://sudoku-jedi.vercel.app/
 
 ## Getting Started
 
@@ -31,7 +32,19 @@ Loop through all possibilities and find a solution
 Find the best cells with the least possible moves and start with them.
 
 
-The solving methodolgy is based on: 
+# Testing
+Jest was used for testing.
+There are 9 test files with 25 individual tests.
+
+To run the tests:
+
+```bash
+npm test
+```
+
+
+
+The solving algorithms are based on: 
 https://lisperator.net/blog/javascript-sudoku-solver/
 
 
