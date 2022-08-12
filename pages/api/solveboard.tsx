@@ -15,7 +15,7 @@ const handler = (req, res) => {
     const timeTaken = new Date().getTime() - d.getTime();
 
     if (newBoard)
-      return res.status(200).json({ board: newBoard, success: true, message: `Managed to find a solution using ${algorithm ? algorithm : "Brute Force"} in  ${timeTaken / 1000} seconds.` })
+      return res.status(200).json({ board: newBoard, success: true, message: `Managed to find a solution using ${algorithm ? algorithm : "Brute Force"} in  ${timeTaken}  milliseconds.` })
     else
       return res.status(200).json({ board: null, success: false, message: "Sorry, there is no solution for this board!" })
 
