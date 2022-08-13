@@ -44,7 +44,7 @@ const boardReducer = (state: StateReducer = initialState, action) => {
       return Object.assign({}, state, { rowi: action.rowi, coli: action.coli, board: action.board, loading: true, message: "", prevBoards: newPrevBoards(state.prevBoards, state.board), })
 
     case constants.SOLVE_BOARD_TRY:
-      return Object.assign({}, state, { loading: "Loading", message: "Waiting for the server to solve the board" })
+      return Object.assign({}, state, { loading: "Loading", message: "Waiting for the server to solve the board", prevBoards: newPrevBoards(state.prevBoards, state.board) })
 
     case constants.SOLVE_BOARD_ERROR:
       return Object.assign({}, state, { loading: false, message: "Waiting for the server to solve the board" })
